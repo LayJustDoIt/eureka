@@ -1,0 +1,22 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka2:8762/eureka/
+    #不显示自己的app name
+#    register-with-eureka: false
+    #不注册自己
+#    fetch-registry: false
+  #关闭安全提示
+  server:
+    enable-self-preservation: false
+  # 显示ip
+  instance:
+    prefer-ip-address: true
+    instance-id: eureka1:8761
+spring:
+  application:
+    name: eureka
+server:
+  port: 8761
+#server:
+#  port: 8762
